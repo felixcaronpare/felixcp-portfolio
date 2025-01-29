@@ -24,16 +24,26 @@ markup:
 
 Menus:
   main: #Menu Links "About Me" - "Photos" - etc
+    - identifier: Experience
+      name: Experience
+      title: Experience
+      # url: https://www.flickr.com/photos/earthwandering/albums #/gallery
+      weight: 2
+    - identifier: Projects
+      name: Projects
+      title: Projects
+      # url: https://www.flickr.com/photos/earthwandering/albums #/gallery
+      weight: 3
+    - identifier: Education
+      name: Education
+      title: Education
+      # url: https://www.flickr.com/photos/earthwandering/albums #/gallery
+      weight: 4
     - identifier: blog #JG - Reenable blog link when I have uptodate content
       name: Posts
       title: Posts
       url: /blogs
-      weight: 1
-    - identifier: gallery
-      name: Photography
-      title: Photography
-      url: https://www.flickr.com/photos/earthwandering/albums #/gallery
-      weight: 2
+      weight: 5
     #Dropdown menu
     # - identifier: dropdown
     #   title: Example dropdown menu
