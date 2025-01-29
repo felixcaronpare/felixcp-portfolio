@@ -1,6 +1,6 @@
-baseURL: "https://jongarrison.github.io"
+baseURL: "http://localhost:1313/"
 languageCode: "en-us"
-title: "Howdy from Jon"
+title: "FCP-SWE"
 theme: hugo-profile
 
 outputs:
@@ -32,7 +32,7 @@ Menus:
     - identifier: gallery
       name: Photography
       title: Photography
-      url: https://www.flickr.com/photos/earthwandering/albums  #/gallery
+      url: https://www.flickr.com/photos/earthwandering/albums #/gallery
       weight: 2
     #Dropdown menu
     # - identifier: dropdown
@@ -53,8 +53,8 @@ Menus:
     #   weight: 2
 
 params:
-  title: "Jon Garrison"
-  description: Public portfolio of Jon Garrison
+  title: "Felix Caron Pare"
+  description: Felix's public portfolio
   # staticPath: ""  # The path to serve the static files from
   # favicon: "/images/noun-led-7037426.png" #"/fav.png"
   favicon: "/images/noun-led-redfull-7037426.svg"
@@ -114,8 +114,8 @@ params:
     disableSearch: true
     # searchPlaceholder: "Search"
     stickyNavBar:
-      enable : true
-      showOnScrollUp : true
+      enable: true
+      showOnScrollUp: true
     enableSeparator: false
     menus:
       disableAbout: false
@@ -129,15 +129,15 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Jon"
-    subtitle: "Can I help you make something?"
-    content: "Software, firmware, electronics, 3D design, algorithmic design, 2 wheels, boats, photography, exploring, etc. I'll try to share a little bit of everything here. If you'd like to talk about a project, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/jonathangarrison/)"
-    image: /images/red-zep.png
+    title: "Felix"
+    subtitle: "I build tech and I love it"
+    content: "DevOps, Web development, cloud-native infrastructure, AI/MLOps, etc. -- If I'm engaged in complicated challenges involving modern technologies, I'm in my comfort zone. Open for work opportunities, so feel free to reach out on [LinkedIn](https://www.linkedin.com/in/felixcaronpare/)."
+    image: /static/images/heroPicture.png
     bottomImage:
       enable: false
       roundImage: true # Make hero image circular | default false
     button:
-      enable: false
+      enable: true
       name: "Resume"
       url: "#"
       download: true
@@ -145,11 +145,11 @@ params:
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
-          url: https://github.com/jongarrison
+          url: https://github.com/felixcaronpare
         - icon: fab fa-linkedin
-          url: https://www.linkedin.com/in/jonathangarrison/
-        - icon: fab fa-flickr
-          url: https://www.flickr.com/photos/earthwandering
+          url: https://www.linkedin.com/in/felixcaronpare/
+        - icon: fab fa-medium-m
+          url: https://medium.com/@felix.cp0
       # customIcons:
       #   - icon: /fav.png
       #     url: "https://example.com"
@@ -160,33 +160,61 @@ params:
     title: "About Me"
     image: "/images/profile.png"
     content: |-
-      I am a software developer currently seeking independent projects. 
+      I am a software engineer currently open for work opportunities and project collaborations. I have been doing a lot of AI/ML oriented work recently, but I love everything that is web development or game development related.
+      <br>
+      <br>
     skills:
       enable: true
-      title: "Here are a few of the technologies I enjoy working with"
+      title: "Here are a few of the technologies that I have enjoyed tinkering with recently:"
       items:
-        - "Languages: Python, Javascript, C++, Java, SQL, HTML, CSS"
-        - "Microcontroller Work: Arduino/C++/C, PlatformIO, Bluetooth, Nordic nRF52, esp32"
-        - "3D Design: Rhino3D (with Grasshopper and Python), Fusion 360, OpenSCAD"
-        - "Web Development: React, Node.js, Express, MongoDB, SQL, Bootstrap"
-        - "Electronics: soldering, machine in the loop testing, debugging"
-        - "Data Analysis: Python, Pandas, Numpy, Matplotlib, Seaborn, Jupyter Notebooks"
+        - "Cloud-native infrastructure: Docker, Kubernetes, Terraform, AWS"
+        - "AI/MLOps: Python, Azure ML, Tensorflow, MLflow"
+        - "Frontend development: React, Vue, Typescript, Django (Python)"
+        - "Backend development: Node.JS, NestJS, Golang, gRPC"
+        - "Game development: Unreal Engine 5, C++, Unity, Protocol Buffers"
+        - "Data libraries: Pandas, Numpy, Matplotlib"
 
   # Experience
   experience:
-    enable: false
+    enable: true
     # title: "Custom Name"
     items:
-      - job: "Senior Software Developer"
-        company: "Facebook"
-        companyUrl: "https://example.com"
-        date: "Jan 2022 - present"
+      - job: "MLOps Engineer"
+        company: "Quebec Ministry of Transports"
+        companyUrl: ""
+        date: "2022 - present"
         featuredLink:
-          enable: true
+          enable: false
           name: "View the project"
           url: "https://example.com"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+        info:
+          enable: false
+        content: "Developing, training, deploying and maintaining AI models, applications and APIs for the business needs of the organisation (Python, Django, Tensorflow, HuggingFace, Azure, Azure ML, Kubernetes). Building the CI/CD pipelines of our AI products (Azure, Git, Github, Docker)."
 
+      - job: "Web Developer"
+        company: "Freelance"
+        companyUrl: ""
+        date: "2023 - present"
+        featuredLink:
+          enable: false
+          name: "View the project"
+          url: "https://example.com"
+        content: |-
+          - Developed a website for [VitaeComptabilite](vitaecomptabilite.com), an accounting business aimed towards serving a customer base of healthcare professionals.
+
+      - job: "Bridge Engineer"
+        company: "Bridge Engineering"
+        companyUrl: "https://example.com"
+        date: "2016 - 2022"
+        featuredLink:
+          enable: false
+          name: "View the project"
+          url: "https://example.com"
+        content: |-
+          I worked in bridge engineering for 2 years at Stantec Ltd. (Jr. Eng.) and 5 years at the Quebec Ministry of Transports, where I first became intereted in building software to solve complicated engineering problems :
+          - Co-Developed a Python data visualition tool for the corrosion of the Pierre-Laporte Bridge (longest suspension bridge in Canada) main cables.
+          - Programmed engineering worksheets to compute the load bearing capacity of over 15 bridges.
+          - Worked as a site supervising junior engineer on one of the largest canadian infrastructure projects ever, the construction of the New Champlain Bridge.
 
   # Education
   education:
